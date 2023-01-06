@@ -49,5 +49,9 @@ int main()
 
 
 
+
+    unsigned int len = sizeof(int);
+    printf("%d\n", len);
+
     return 0;
 }
