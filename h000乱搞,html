@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第一次做网页</title>
+    </head>
+    <body>
+        <h1>
+            <p>这是一段文本，<b>我是加粗</b>,<i>我是斜体</i>,带下标的<sub>2</sub>,<del>我是带删除线的文本哦</del>，<br/>我是下一行啊 
+            </p>
+            <ul>
+                <li>无序列表</li>
+                <li>无序列表</li>
+                <li>无序列表</li>
+            </ul>
+            <ol>
+                <li>有序列表</li>
+                <li>有序列表</li>
+                <li>有序列表</li>
+            </ol>
+        </h1>
+        <h2>
+            <a href="https://www.baidu.com">跳转到百度</a>
+        </h2>
+        <h3>
+            <img src="" alt="">
+            <video src=""></video>
+            <audio src=""></audio>
+        </h3>
+    </body>
+</html>
