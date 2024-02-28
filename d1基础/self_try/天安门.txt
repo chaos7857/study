@@ -1,0 +1,426 @@
+
+import turtle as t
+import turtle
+import random
+
+#位移函数
+def Skip(t,x,y):
+    t.penup()
+    t.goto(x,y)
+    t.pendown()
+turtle.bgcolor("black")
+
+#画笔基础设置
+t.screensize(1500,800)
+t.pensize(3)
+t.hideturtle()
+t.speed(0)
+#t.pencolor("black")
+
+#画笔移动
+Skip(t,-200,100)
+
+t.fillcolor("orange")
+t.begin_fill()
+
+#画房盖
+t.circle(40,90)
+
+
+t.right(90)
+
+t.forward(200)
+
+t.right(90)
+t.circle(40,90)
+t.right(180)
+t.forward(280)
+
+t.end_fill()
+
+t.fillcolor("red")
+t.begin_fill()
+
+#顶层
+t.left(135)
+t.forward(20)
+t.left(45)
+t.forward(252)
+t.left(45)
+t.forward(20)
+t.left(135)
+t.forward(280)
+t.right(135)
+t.end_fill()
+
+Skip(t,-184,86)
+
+t.fillcolor("red")
+t.begin_fill()
+
+
+t.right(135)
+t.forward(20)
+t.left(90)
+t.forward(249)
+t.left(90)
+t.forward(20)
+t.left(90)
+t.forward(249)
+t.right(90)
+t.end_fill()
+
+#国徽
+Skip(t,-40,84)
+t.fillcolor("yellow")
+t.begin_fill()
+
+t.circle(18)
+t.end_fill()
+
+
+#第二层屋檐
+Skip(t,-180,66)
+t.fillcolor("orange")
+t.begin_fill()
+
+t.left(110)
+t.forward(50)
+t.circle(-40,50)
+t.left(150)
+t.circle(30,60)
+t.forward(354)
+t.circle(30,60)
+t.left(150)
+t.circle(-40,50)
+t.forward(50)
+t.left(20)
+t.forward(250)
+t.right(20)
+t.end_fill()
+
+
+#第二层
+t.fillcolor("red")
+t.begin_fill()
+
+Skip(t,-214,37)
+t.left(110)
+t.forward(30)
+t.left(90)
+t.forward(309)
+t.left(90)
+t.forward(30)
+t.left(90)
+t.forward(309)
+t.right(90)
+t.end_fill()
+
+#第二层柱子
+t.pensize(3)
+t.left(180)
+Skip(t,-183,37)
+t.forward(30)
+Skip(t,-152,37)
+t.forward(30)
+Skip(t,-121,37)
+t.forward(30)
+Skip(t,-90,37)
+t.forward(30)
+Skip(t,-59,37)
+t.forward(30)
+Skip(t,-28,37)
+t.forward(30)
+Skip(t,3,37)
+t.forward(30)
+Skip(t,34,37)
+t.forward(30)
+Skip(t,65,37)
+t.forward(30)
+t.left(180)
+
+
+
+#外墙
+t.pensize(2)
+t.fillcolor("#cc0000")
+t.begin_fill()
+Skip(t,-214,7)
+t.left(90)
+t.forward(250)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(809)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(800)
+Skip(t,-464,-15)
+t.left(180)
+t.forward(383)
+Skip(t,-37,-15)
+t.forward(383)
+t.end_fill()
+
+#正门和侧门
+t.fillcolor("#ffff00")
+t.begin_fill()
+
+Skip(t,-79,-92)
+t.left(90)
+t.forward(15)
+t.circle(-20,180)
+t.forward(15)
+t.right(90)
+t.forward(40)
+t.left(90)
+t.end_fill()
+
+t.fillcolor("#ffff00")
+t.begin_fill()
+Skip(t,-189,-92)
+t.left(180)
+t.forward(10)
+t.circle(-15,180)
+t.forward(10)
+t.right(90)
+t.forward(30)
+t.left(90)
+t.end_fill()
+
+t.fillcolor("#ffff00")
+t.begin_fill()
+Skip(t,31,-92)
+t.left(180)
+t.forward(10)
+t.circle(-15,180)
+t.forward(10)
+t.right(90)
+t.forward(30)
+t.left(90)
+t.end_fill()
+
+t.fillcolor("#ffff00")
+t.begin_fill()
+Skip(t,-269,-92)
+t.left(180)
+t.forward(10)
+t.circle(-15,180)
+t.forward(10)
+t.right(90)
+t.forward(30)
+t.left(90)
+t.end_fill()
+
+t.fillcolor("#ffff00")
+t.begin_fill()
+Skip(t,111,-92)
+t.left(180)
+t.forward(10)
+t.circle(-15,180)
+t.forward(10)
+t.right(90)
+t.forward(30)
+t.left(90)
+t.end_fill()
+
+#文字
+t.fillcolor("#ff6666")
+t.begin_fill()
+Skip(t,-340,-15)
+t.forward(20)
+
+t.left(90)
+t.forward(190)
+t.left(90)
+t.forward(20)
+t.left(90)
+t.forward(190)
+t.end_fill()
+t.left(90)
+t.forward(20)
+t.left(90)
+t.forward(20)
+t.pencolor("yellow")
+t.write("中华人民共和国万岁",False,align="left",font=("Arial",12,"bold"))
+t.left(90)
+
+
+t.pencolor("black")
+t.fillcolor("#ff6666")
+t.begin_fill()
+Skip(t,25,-15)
+t.left(180)
+t.forward(20)
+
+t.left(90)
+t.forward(190)
+t.left(90)
+t.forward(20)
+t.left(90)
+t.forward(190)
+t.end_fill()
+t.left(90)
+t.forward(20)
+t.left(90)
+t.forward(20)
+t.pencolor("yellow")
+t.write("世界人民大团结万岁",False,align="left",font=("Arial",12,"bold"))
+t.left(90)
+
+
+t.pencolor("black")
+t.fillcolor("#ff0000")
+t.begin_fill()
+#画框
+Skip(t,-77,-4)
+t.left(180)
+t.forward(45)
+t.left(90)
+t.forward(36)
+t.left(90)
+t.forward(45)
+t.left(90)
+t.forward(36)
+
+t.end_fill()
+#t.done()
+
+#国旗底座
+t.fillcolor("#993300")
+t.begin_fill()
+
+Skip(t,370,-250)
+t.forward(200)
+t.left(90)
+t.forward(50)
+t.left(90)
+t.forward(200)
+t.left(90)
+t.forward(50)
+t.left(90)
+t.end_fill()
+
+t.fillcolor("#ccffff")
+t.begin_fill()
+
+Skip(t,290,-250)
+t.forward(10)
+t.right(90)
+t.forward(550)
+t.right(90)
+t.forward(10)
+t.right(90)
+t.forward(550)
+t.end_fill()
+
+t.bk(550)
+
+t.right(90)
+t.forward(10)
+t.left(90)
+t.forward(10)
+t.right(90)
+
+t.fillcolor("red")
+t.begin_fill()
+t.forward(180)
+t.left(90)
+t.forward(100)
+t.left(90)
+t.forward(180)
+t.left(90)
+t.end_fill()
+t.forward(100)
+
+def wujiaoxing(size,roation):
+    t.pencolor("yellow")
+    t.fillcolor("yellow")
+    t.begin_fill()
+    t.right(roation)
+    for i in range(5):
+        t.forward(size)
+        t.right(144)
+    t.end_fill()
+        
+Skip(t,250,250)
+wujiaoxing(30,15)
+
+Skip(t,160+60,275)
+wujiaoxing(10,30)
+
+Skip(t,170+40,265)
+wujiaoxing(10,30)
+
+Skip(t,170+40,255)
+wujiaoxing(10,30)
+
+Skip(t,160+60,245)
+wujiaoxing(10,30)
+
+
+t.pencolor("red")
+Skip(t,-350,-250)
+t.write("我爱你中国",False,align="left",font=("Arial",30,"bold"))
+Skip(t,-200,-300)
+t.write("祖国万岁",False,align="left",font=("Arial",30,"bold"))
+
+'''
+
+
+
+
+
+t.speed(0)
+t.penup()
+t.goto(250,120)
+t.pendown()
+t.color("yellow")
+t.begin_fill()
+t.circle(100)
+t.end_fill()
+
+
+
+for i in range(0,20):
+  x=random.randint(-400,300)
+  y=random.randint(0,320)
+  
+  t.penup()
+  t.goto(x,y)
+  t.pendown()
+  t.begin_fill()
+  roation = random.randint(0,360)
+  size=random.randint(10,25)
+  for j in range(0,5):
+      t.fd(size)
+      t.rt(144)
+  t.rt(roation)
+  t.end_fill()
+
+'''
+def randomcolor():
+    colorArr=["1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"]
+    color=""
+    for i in range(6):
+        color+=colorArr[random.randint(0,14)]
+    return "#"+color
+
+def yanhua(x,y):
+    size = random.randint(0,8)
+    roation = random.randint(0,8)
+    roation += 8
+    for i in range(roation):
+        t.pencolor(randomcolor())
+        Skip(t,x,y)
+        t.circle(50 + size,360/roation)
+        #t.right(360/4)
+        
+
+for i in range(13):
+    rand_x = random.randint(-350,200)
+    rand_y = random.randint(-100,100)
+    yanhua(rand_x,rand_y)
+
+turtle.done()                               
