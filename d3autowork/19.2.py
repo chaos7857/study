@@ -8,7 +8,7 @@ dogImg = Image.open('./dog.png')
 '''
 face = dogImg.crop((333,344,565,560))
 dogImg.paste(face,(0,0))
-dogImg.save('pastedImg.png')
+dogImg.save('pastedImg.png')c:\Users\Admin\Desktop\projects\Pytorch_study\mnist识别\src\test4.jpg
 '''
 
 

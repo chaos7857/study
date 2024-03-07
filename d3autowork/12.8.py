@@ -3,6 +3,7 @@
 需求：自动填写表单并登录校园网
 目前难以实现，一直都是无法交互，在相同配置下，采用相同方法提交其他表单明明可以
 可能是那个false搞的鬼
+直接用pyautogui来实现就行了
 '''
 from selenium import webdriver
 import time
