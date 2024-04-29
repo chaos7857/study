@@ -2,7 +2,8 @@
 将图片颜色反转
 '''
 from PIL import Image
-img = Image.open("d3autowork/test4.png")
+img = Image.open("./data/Snipaste_2024-04-09_15-04-48.png")
+# img = Image.open("d3autowork/test4.png")
 print(img)
 anti_pixel = []
 for i in range(img.height):# 0-27
@@ -12,5 +13,5 @@ for i in range(img.height):# 0-27
         for k in range(3):
             anti_pixel.append(255-pixel[k])
         img.putpixel((i,j),tuple(anti_pixel))
-img.save("d3autowork/anti_t4.png")
+img.save("anti_Snipaste_2024-04-09_15-04-48.png.png")
 print("done.")

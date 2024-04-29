@@ -32,7 +32,7 @@ while(True):
         #     print(ent["entry"]+":  "+ent["explain"])
 
         #  将得到的结果保存到 积累.txt 中
-        file = open(name+'.txt', 'a')
+        file = open(name+'.txt', 'a', encoding="utf-8")
         file.write(ents[0]["entry"]+":  "+ents[0]["explain"]+"\n")
         file.write("\t"+"形似词："+"\n")
 
