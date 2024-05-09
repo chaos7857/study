@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue-指令-v-bind</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <a :href="url">bing</a>
+        <a v-bind:href="url">bing2</a>
+
+        <br><br>
+        <input type="text" v-model="url">
+        <br><br>
+        {{url}}
+
+    </div>
+</body>
+<script>
+    //定义Vue对象
+    new Vue({
+        el: "#app", //vue接管区域
+        data:{
+           url: "https://cn.bing.com/?scope=web&FORM=ANNNB1"
+        }
+        
+    })
+</script>
+</html>

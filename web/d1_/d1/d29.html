@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-对象-DOM演示</title>
+        <!-- <script src="js/d29.js"></script> -->
+    </head>
+
+    <body>
+        <img src="img/off.gif" id="h1"><br><br>
+
+        <div class="cls" >1111111</div><br>
+        <div class="cls">222</div><br>
+
+        <input type="checkbox" name="hobby"> 1
+        <input type="checkbox" name="hobby"> 2
+        <input type="checkbox" name="hobby"> 3
+
+    </body>
+
+    <script>
+        var a = document.getElementById("h1");
+        console.log(a);
+        a.src = "img/on.gif";
+
+        var bs = document.getElementsByTagName('div');
+        console.log(bs);
+        for (let i = 0; i < bs.length; i++) {
+            const b = bs[i];
+            b.innerHTML += "<font color = 'red'>                   very good</font>";
+        }
+        
+
+
+        var c = document.getElementsByName("hobby");
+        for (let i = 0; i < c.length; i++) {
+            const t = c[i];
+            t.checked = true;
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+</html>

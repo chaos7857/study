@@ -1,0 +1,35 @@
+h1{
+    color: gray;
+}
+
+/* span{
+    color: green;
+} */
+
+
+.classname{
+    color: #00ff00;
+}
+
+#idname{
+    color: red;
+    font-size: 34px;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+p{
+    text-indent: 35px;
+    line-height: 40px;
+}
+
+
+#editor{
+    text-align: right;
+}
+

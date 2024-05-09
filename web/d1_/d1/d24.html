@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta content="always" name="referrer">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="全球领先的中文搜索引擎、致力于让网民更便捷地获取信息，找到所求。百度超过千亿的中文网页数据库，可以瞬间找到相关的搜索结果。">
+
+
+        <title>d24</title>
+
+    </head>
+
+    <body>
+        <script>
+            // 方法一
+            var arr = new Array(1,2,3,4);
+            // 方法二
+            var arr2 = [1,2,3,4];
+            
+            console.log(arr[0]);
+            console.log(arr[1]);
+            console.log(arr[2]);
+            console.log(arr[3]);
+            console.log(arr2[0]);
+
+            // js中的数组相当于Java中的集合，可变
+            arr[10] = 50;
+
+            console.log(arr[10]);
+            console.log(arr[9]);// undefined
+            
+            arr[9] = "tom";
+            console.log(arr[9]);// tom
+            console.log(arr);
+
+            console.log(arr.length);
+
+            // foreach只会遍历有值的元素
+            arr.forEach(function(e){
+                console.log(e);
+            })
+
+            // 梦回lambda
+            arr.forEach(e=>console.log(e));
+
+            arr.push(99);
+            console.log(arr);
+
+            arr.splice(2,2);
+            console.log(arr);
+
+            
+        </script>
+        <p> foreach只会遍历有值的元素</p>
+        <hr>
+
+    </body>
+
+
+
+
+
+</html>
