@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="MissingConstraints">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:src="@drawable/img_0"
+                android:id="@+id/img_info"
+                android:layout_margin="20dp"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/tv_info"
+                android:text="这里是语录"
+                android:layout_margin="20dp"
+                android:textAlignment="center"
+                android:textSize="20dp"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_info"
+                android:text="FLASH"
+                android:background="#eeeeee"
+                android:layout_margin="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
