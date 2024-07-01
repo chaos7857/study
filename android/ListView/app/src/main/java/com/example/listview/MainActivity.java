@@ -37,12 +37,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initData() {
+        // 创建模拟数据
         students = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
             students.add(new Student(i, "学生"+i,"hello"));
         }
         Log.d("data", students.toString());
         Log.d("data", students.size()+"");
+
+        // 构造器
         MyAdapter myAdapter = new MyAdapter(students, getApplicationContext());
         listView.setAdapter(myAdapter);
         Log.d("data","over");
