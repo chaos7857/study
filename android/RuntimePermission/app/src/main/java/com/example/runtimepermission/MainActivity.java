@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private void call() {
         try {
             Intent intent = new Intent(Intent.ACTION_CALL);
-            intent.setData(Uri.parse("tel:178"));
+            intent.setData(Uri.parse("tel:17855807857"));
             startActivity(intent);
         } catch (Exception e) {
             throw new RuntimeException(e);
