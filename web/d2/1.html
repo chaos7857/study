@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>js</title>
+    </head>
+    <body>
+        <h1 id="text" style="text-align: center;">js学习中的一些小测试</h1>
+        <button id="btn" title="这是一个事件监听的按钮" >单机我变色</button>
+
+
+
+
+
+        <script>
+            btn = document.querySelector('#btn')
+            btn.addEventListener('click',function(e){
+                console.log(e);
+                console.log('单机变红')
+                let text = document.getElementById('text')
+                text.style.color = 'red'
+            })
+            btn.addEventListener('dblclick',function(e){
+                console.log(e);
+                console.log('双击变蓝')
+                let text = document.getElementById('text')
+                text.style.color = 'blue'
+            })
+            btn.addEventListener('mouseenter',function(e){
+                console.log(e);
+                console.log('鼠标in')
+                this.style.height = '200px'
+                this.style.cursor = 'move'
+            })
+            btn.addEventListener('mouseleave',function(e){
+                console.log(e);
+                console.log('鼠标leave')
+                this.style.height = '30px'
+            })
+        </script>
+    </body>
+</html>
