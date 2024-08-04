@@ -1,0 +1,15 @@
+{
+  "name": "mypackage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "achao",
+  "license": "ISC",
+  "devDependencies": {
+    "md2html":"i5ting_toc"
+  },
+  "dependencies": {}
+}

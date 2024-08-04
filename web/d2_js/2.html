@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>js</title>
+    </head>
+    <body>
+        <div id="di">
+            <h1 id="text" style="text-align: center;">js学习中的一些小测试</h1>
+            <button id="btn" title="这是一个事件监听的按钮" >单机我变色</button>
+
+        </div>
+        
+
+
+
+
+
+        <script>
+            btn = document.querySelector('#btn')
+            btn.addEventListener('click',function(e){
+                // console.log(e);
+                console.log('inner')
+            })
+            di = document.querySelector('#di')
+            di.addEventListener('click',function(){
+                console.log('outer')
+            })
+        
+        </script>
+    </body>
+</html>
