@@ -1,0 +1,43 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{lipsum}  % 产生填充假文
+
+
+\begin{document}
+	This picture
+	\begin{center}
+		\includegraphics[height=2cm]{example-image}
+	\end{center}
+	is an imported PDF.
+	
+	\begin{center}
+		\includegraphics[width = 0.5\textwidth]{example-image}
+	\end{center}
+	
+	\begin{center}
+		\includegraphics[height = 0.5\textheight]{example-image}
+	\end{center}
+	
+	
+	\begin{center}
+		\includegraphics[clip, trim = 0 0 50 50]{example-image}
+	\end{center}
+	
+	\lipsum[1-4] % 只是一些填充文段
+	
+	Test location.
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.5\textwidth]{example-image-a.png}
+		\caption{An example image}
+	\end{figure}
+	
+	\lipsum[6-10] % 只是一些填充文段
+	
+	
+	%	h Here 这里（如果可以的话）
+	%	t Top 页面顶部
+	%	b Bottom 页面底部
+	%	p Page 浮动体专页
+\end{document}
